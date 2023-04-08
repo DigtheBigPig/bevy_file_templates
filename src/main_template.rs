@@ -1,5 +1,4 @@
 use bevy::prelude::*;
-use bevy_rapier2d::prelude::*;
 
 
 // INFO: 
@@ -36,17 +35,19 @@ fn main() {
         // ---------- Appstate ----------
         .add_state::<AppState>()
         // ----------  Initial Setup ----------
-        .add_plugin(camera::CameraPlugin)
-        .add_plugin(player::PlayerPlugin)
-        .add_plugin(controller::ControllerPlugin)
+        //.add_plugin(camera::CameraPlugin)
+        //.add_plugin(player::PlayerPlugin)
+        //.add_plugin(controller::ControllerPlugin)
+        // ---- Main menu ----
 
+        //.add_plugin(ui::UiPlugin)
         // ---- Scenes ----
         
-        .add_plugin(map1::MapPlugin)
-        .add_plugin(ui::UiPlugin)
+        //.add_plugin(map1::MapPlugin)
+        
 
         // ----------  Debug ----------
-        .add_plugin(debug::DebugPlugin)
+        //.add_plugin(debug::DebugPlugin)
         .run();
 }
 
